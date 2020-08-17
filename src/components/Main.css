@@ -1,0 +1,43 @@
+.title {
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+.calculator{
+    margin-top: 20px;
+}
+
+.section{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-body {
+    font-size: 15px;
+}
+
+.section-title-buy {
+    font-size: 30px;
+    color: green;
+    text-align: center;
+}
+
+.section-title-sell {
+    font-size: 30px;
+    color: red;
+    text-align: center;
+}
+
+.section-title-total {
+    font-size: 30px;
+    color: blue;
+    text-align: center;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
