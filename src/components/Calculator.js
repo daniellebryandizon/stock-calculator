@@ -79,7 +79,7 @@ const Calculator = () => {
     return (
         < Fragment >
             <div className="title">
-                Stock Calculator
+                The Trading Calculator
             </div>
             <div className="calculator">
                 <Row>
