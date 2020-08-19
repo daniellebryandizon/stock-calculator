@@ -86,6 +86,9 @@ export const calculateDetails = (shares, buyPrice, sellPrice) => {
     if (buyNet !== 0 && sellNet !== 0) {
         netProfit = sellNet - buyNet;
         percentGain = (netProfit / buyNet) * 100
+    } else {
+        netProfit = 0;
+        percentGain = 0;
     }
 
     return { netProfit, percentGain }

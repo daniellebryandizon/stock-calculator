@@ -45,13 +45,13 @@ const Total = ({ data: { netProfit, percentGain } }) => {
                                     percentGain > 0 ?
                                         (
                                             <div className="green">
-                                                {toCurrencyWithCommas(percentGain.toFixed(2))}
+                                                {toCurrencyWithCommas(percentGain.toFixed(2))} %
                                             </div>
                                         ) :
                                         percentGain < 0 ?
                                             (
                                                 <div className="red">
-                                                    {toCurrencyWithCommas(percentGain.toFixed(2))}
+                                                    {toCurrencyWithCommas(percentGain.toFixed(2))} %
                                                 </div>
                                             )
                                             :

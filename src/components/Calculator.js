@@ -41,9 +41,7 @@ const Calculator = () => {
         sellNet: 0
     })
 
-    const { buyShares, buyPrice, sellShares, sellPrice, netProfit, percentGain } = formData;
-    const { buyNet } = buyDetails;
-    const { sellNet } = sellDetails;
+    const { buyShares, buyPrice, sellShares, sellPrice } = formData;
 
     useEffect(() => {
         const processBuy = calculateBuy(buyShares, buyPrice);
@@ -64,6 +62,10 @@ const Calculator = () => {
         const processSell = calculateSell(sellShares, sellPrice);
         setSellDetails(processSell);
 
+        console.log("Buy Shares: " + buyShares);
+        console.log("Buy Price: " + buyPrice);
+        console.log("Sell Price: " + sellPrice);
+
         const processTotal = calculateDetails(buyShares, buyPrice, sellPrice)
         setFormData({
             ...formData,
@@ -71,7 +73,7 @@ const Calculator = () => {
             netProfit: processTotal.netProfit,
             percentGain: processTotal.percentGain
         });
-        
+
     }, [sellShares, sellPrice])
 
     return (
